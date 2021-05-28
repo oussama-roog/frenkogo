@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    color: #fff;
+    background-color: rgb(29, 29, 29);
+    font-family: "Roboto", sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    height: 150px;
+    background-color: rgb(43, 43, 43);
+    /* background: linear-gradient(
+        180deg,
+        rgb(80, 80, 80) 0%,
+        rgba(255, 255, 255, 1) 100%
+    ); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    background-image: url("images/logo4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* background-color: violet; */
+    width: 400px;
+    height: 100px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 10px;
+    margin-top: 80px;
+}
+section {
+    padding: 0 5px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    max-width: 900px;
+}
+
+.sec-1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1000px;
+}
+
+.sec-1::before {
+    content: "";
+    background-color: #ff7330;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 110%;
+    transform: rotate(5deg);
+    border-radius: 50px;
+}
+
+.vid {
+    background-image: url("images/banner1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-color: violet; */
+    /* max-width: 400px; */
+    height: 600px;
+    /* border-radius: 50%; */
+}
+
+.sec-2 {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1000px;
+}
+.btn-bay {
+    background-color: #ffcc00;
+    padding: 20px 10px;
+    border-radius: 10px;
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
+    width: 350px;
+    transition: all 0.3s;
+    color: black;
+    border: white 5px solid;
+}
+.btn-bay:hover {
+    box-shadow: 0px 0px 18px 0px rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.welcom {
+    list-style-type: disc;
+}
+.welcom li {
+    background-image: url("/images/checksicon.png");
+    background-repeat: no-repeat;
+    font-weight: 300 !important;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    padding-top: 7px;
+    font-weight: 400;
+    list-style-type: none;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    .sec-1::before {
+        content: "";
+        background-color: #f05d23;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 110%;
+        transform: rotate(0deg);
+        border-radius: 20px;
+    }
+}
